@@ -1,7 +1,7 @@
 # JG MD4
-#### SOLUTION ARCHITECTURE
+### SOLUTION ARCHITECTURE
 Diagram will follow
-#### AWS EC-2 servers
+### AWS EC-2 servers
 > - **Mihails-MD4-APP** (t2.micro, us-east-1b)
      -- wordpress:latest, nginx:latest container images
      -- docker compose:
@@ -55,7 +55,7 @@ services:
 Security group: **Mihails-MD4-DB-SG**
 ![image](https://user-images.githubusercontent.com/3802544/228033350-c2a18825-137f-4d35-9fe1-9ad0b9ae8a5a.png)
 
- #### EC-2 server pre-requisites
+ ### EC-2 server pre-requisites
 1. Install docker engine and docker compose plugin to both servers in order to run docker-compose
  ```sh
  #SETUP DOCKER
@@ -81,5 +81,5 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
  cd /opt/wpmsql
  docker-compose up
  ```
-#### Deployed WP screenshot
+### Deployed WP screenshot
 ![Image](https://user-images.githubusercontent.com/3802544/227957973-3c98bbbd-4fbd-4b2d-9fb0-0d0c6397146f.png)
