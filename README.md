@@ -3,8 +3,16 @@
 Diagram will follow
 ### AWS EC-2 servers
 > - **Mihails-MD4-APP** (t2.micro, us-east-1b)
-     -- wordpress:latest, nginx:latest container images
-     -- docker compose:
+
+ **Docker images deployed**:
+ 
+| Image | README |
+| ------ | ------ |
+| wordpress | [wordpress:latest](https://hub.docker.com/_/c14a56d6-07e4-464b-b71c-4b24dc7f1836?tab=tags) |
+| nginx | [nginx:latest](https://hub.docker.com/_/nginx) |
+
+**docker-compose**:
+
 ```sh
 version: '3.7'
 services:
@@ -33,8 +41,15 @@ Security group: **Mihails-EC2-APP-SG**
 ![image](https://user-images.githubusercontent.com/3802544/228032800-fe3449a7-e682-418a-b3a2-eadd6dfa3bf4.png)
     
 > - **Mihails-MD4-DB** (t2.micro, us-east-1a)
-    > -- mysql:latest container image
-    > -- docker compose
+
+**Docker images deployed**:
+
+| Image | README |
+| ------ | ------ |
+| mysql | [mysql:latest](https://hub.docker.com/_/mysql) |
+
+**docker-compose**:
+
 ```sh
 version: '3.7'
 services:
@@ -71,12 +86,12 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
  ```
  2. Run docker-compose up
  
- 2.1. Mihails-MD4-APP
+ - **Mihails-MD4-APP**
  ```sh
  cd /opt/wordpress
  docker-compose up
  ```
- 2.2. Mihails-MD4-DB
+ - **Mihails-MD4-DB**
   ```sh
  cd /opt/wpmsql
  docker-compose up
