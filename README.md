@@ -3,8 +3,8 @@
 Diagram will follow
 #### AWS EC-2 servers
 > - **Mihails-MD4-APP** (t2.micro, us-east-1b)
-     > -- wordpress:latest, nginx:latest container images
-     > -- docker compose:
+     -- wordpress:latest, nginx:latest container images
+     -- docker compose:
 ```sh
 version: '3.7'
 services:
@@ -29,6 +29,8 @@ services:
             - "/opt/nginx/:/etc/nginx/conf.d"
             - "/opt/nginx/ssl/:/opt/nginx/ssl/"         
 ```     
+Security group: **Mihails-EC2-APP-SG**
+![image](https://user-images.githubusercontent.com/3802544/228032800-fe3449a7-e682-418a-b3a2-eadd6dfa3bf4.png)
     
 > - **Mihails-MD4-DB** (t2.micro, us-east-1a)
     > -- mysql:latest container image
@@ -50,6 +52,9 @@ services:
             - MYSQL_PASSWORD=wordpress
 
 ```
+Security group: **Mihails-MD4-DB-SG**
+![image](https://user-images.githubusercontent.com/3802544/228033350-c2a18825-137f-4d35-9fe1-9ad0b9ae8a5a.png)
+
  #### EC-2 server pre-requisites
 1. Install docker engine and docker compose plugin to both servers in order to run docker-compose
  ```sh
