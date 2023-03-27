@@ -70,6 +70,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
  ```
  2. Run docker-compose up
+ 
  2.1. Mihails-MD4-APP
  ```sh
  cd /opt/wordpress
