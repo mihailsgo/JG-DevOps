@@ -64,5 +64,16 @@ sudo curl -L https://github.com/docker/compose/releases/download/v2.17.1/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
  ```
+ 2. Run docker-compose up
+ 2.1. Mihails-MD4-APP
+ ```sh
+ cd /opt/wordpress
+ docker-compose up
+ ```
+ 2.2. Mihails-MD4-DB
+  ```sh
+ cd /opt/wpmsql
+ docker-compose up
+ ```
 #### Deployed WP screenshot
 ![Image](https://user-images.githubusercontent.com/3802544/227957973-3c98bbbd-4fbd-4b2d-9fb0-0d0c6397146f.png)
