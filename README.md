@@ -1,6 +1,6 @@
 # JG MD4
 ### Proposed solution architecture
-![image](https://user-images.githubusercontent.com/3802544/228198301-319cb306-3d2e-4c4d-8e68-cfe1bd046e36.png)
+![image](https://user-images.githubusercontent.com/3802544/228199339-39f1b025-abb5-4327-9f5c-93b29cc36a7a.png)
 ### AWS EC-2 servers
 > - **Mihails-MD4-APP** (t2.micro, us-east-1b)
 
