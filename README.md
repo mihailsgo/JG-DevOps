@@ -1,6 +1,32 @@
 # JG MD4
 ### Proposed solution architecture
 ![image](https://user-images.githubusercontent.com/3802544/228199339-39f1b025-abb5-4327-9f5c-93b29cc36a7a.png)
+### Expenses
+ - EC-2 servers: **2 x c5d.xlarge instances**
+ - Each c5d.xlarge instance represents such configuration:
+
+![image](https://user-images.githubusercontent.com/3802544/228203106-0fc751b8-92c1-48c4-98e2-a1bda6f45a52.png)
+
+|Parameter |Value |
+| ------ | ------ |
+| CPU | 4 x CPU |
+| RAM | 8 GB |
+| HDD | 1 x 100 NVMe SSD |
+| Network | Up to 10 Gigabit |
+| Cost per hour |0.24 $ |
+
+ - Spike pattern:
+
+![image](https://user-images.githubusercontent.com/3802544/228206872-2c5399f3-1c32-447c-b903-98e62db24644.png)
+![image](https://user-images.githubusercontent.com/3802544/228206992-6184c85e-1d22-4347-92f2-8cb1024f4952.png)
+
+ - Total cost
+ 
+ **265.93 $ monthly / 3,191.14 $ yearly**
+ 
+ ![image](https://user-images.githubusercontent.com/3802544/228207155-74175691-319a-4bed-bb30-1c6a8303c61a.png)
+
+
 ### AWS EC-2 servers
 > - **Mihails-MD4-APP** (t2.micro, us-east-1b)
 
